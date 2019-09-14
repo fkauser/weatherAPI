@@ -1,0 +1,148 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 2,
+            "value": "# As a weather enthusiast I would like to know the number of days in Sydney where the temperature is predicated to be"
+          },
+          {
+            "line": 3,
+            "value": "# above 20 degrees in the next 2 weeks (from the current days date)."
+          },
+          {
+            "line": 4,
+            "value": "# I would also like to know how many days it is predicted to be sunny."
+          }
+        ],
+        "line": 9,
+        "name": "Weather Forecast",
+        "description": "",
+        "id": "call-weather-api-and-check-following-conditions-for-next-2-weeks-(14-days);weather-forecast",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 394726500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Activate a URL",
+            "match": {
+              "location": "stepDefination.activateAURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 957613100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Pass the City Name, Access and Days for weather forecast",
+            "match": {
+              "location": "stepDefination.passTheCityNameAccessAndDaysForWeatherForecast()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Check 2 weeks Weather Forecast",
+        "description": "",
+        "id": "call-weather-api-and-check-following-conditions-for-next-2-weeks-(14-days);check-2-weeks-weather-forecast",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1062000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Validate the Number of days",
+            "match": {
+              "location": "stepDefination.validateTheNumberOfDays()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Check City Name",
+        "description": "",
+        "id": "call-weather-api-and-check-following-conditions-for-next-2-weeks-(14-days);check-city-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 80800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Validate the City Name",
+            "match": {
+              "location": "stepDefination.validateTheCityName()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "the number of days in Sydney where the temperature is predicated above 20",
+        "description": "",
+        "id": "call-weather-api-and-check-following-conditions-for-next-2-weeks-(14-days);the-number-of-days-in-sydney-where-the-temperature-is-predicated-above-20",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 208500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Total Number of Days in the next two weeks",
+            "match": {
+              "location": "stepDefination.totalNumberOfDaysInTheNextTwoWeeks()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "how many days it is predicted to be sunny",
+        "description": "",
+        "id": "call-weather-api-and-check-following-conditions-for-next-2-weeks-(14-days);how-many-days-it-is-predicted-to-be-sunny",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 113600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "In Next Two Weeks total Sunny Days",
+            "match": {
+              "location": "stepDefination.inNextTwoWeeksTotalSunnyDays()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Call Weather API and Check following conditions for next 2 weeks (14 Days)",
+    "description": "",
+    "id": "call-weather-api-and-check-following-conditions-for-next-2-weeks-(14-days)",
+    "keyword": "Feature",
+    "uri": "weatherTestCases.feature"
+  }
+]
